@@ -14,6 +14,7 @@ public class Coche {
 	private String marca;
 	private String matricula;
 	private String color;
+	private Double precio;
 	
 	
 	public Long getId() {
@@ -39,5 +40,11 @@ public class Coche {
 	}
 	public void setColor(String color) {
 		this.color = color;
+	}
+	public Double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(Double precio) {
+		this.precio = precio;
 	}
 }
