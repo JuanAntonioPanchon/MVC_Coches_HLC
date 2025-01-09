@@ -22,13 +22,13 @@ public class InicializarDatos {
 			return;
 		}
 		 	Coche coche1 = new Coche();
-		 	coche1.setMarca("Coche 1");
-		 	coche1.setPrecio(new Double("10.99"));
+		 	coche1.setMarca("Toyota");
+		 	coche1.setPrecio(new Double("25000"));
 	        cocheServicio.guardarCoche(coche1);
 	        
 	        Coche coche2 = new Coche();
-	        coche2.setMarca("Coche 2");
-	        coche2.setPrecio(new Double("15.49"));
+	        coche2.setMarca("Mercedes");
+	        coche2.setPrecio(new Double("38500"));
 	        cocheServicio.guardarCoche(coche2);
 	}
 }
