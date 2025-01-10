@@ -29,7 +29,7 @@ public class CocheServicio {
 	
 	public Coche obtenerCochePorId(Long id) {
 		return cocheRepositorio.findById(id).orElseThrow(() -> 
-        new IllegalArgumentException("Producto no encontrado con id: " + id));
+        new IllegalArgumentException("Coche no encontrado con id: " + id));
 	}
 	
 	public void eliminarCoche (Long id) {
