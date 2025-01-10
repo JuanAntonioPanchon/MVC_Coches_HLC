@@ -16,7 +16,18 @@ public class Coche {
 	private String color;
 	private Double precio;
 	
+	//Si no le pongo constructor tiene el constructor vacío por defecto. Una vez que ya meto un constructor debo poner el vacío;
+	public Coche() {
+		
+	}
 	
+	public Coche(String marca, String matricula, String color, Double precio) {
+		super();
+		this.marca = marca;
+		this.matricula = matricula;
+		this.color = color;
+		this.precio = precio;
+	}
 	public Long getId() {
 		return id;
 	}
