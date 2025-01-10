@@ -1,11 +1,14 @@
 package com.hlc.coche.servicios;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hlc.coche.entidades.Coche;
 import com.hlc.coche.repositorio.CocheRepositorio;
 
+/*
 @Service
 public class CocheServicio {
 
@@ -33,3 +36,13 @@ public class CocheServicio {
 		cocheRepositorio.deleteById(id);
 	}
 }
+*/
+
+public interface CocheServicio{
+	List<Coche> obtenerTodosLosCoches();
+	Coche obtenerCochePorId(Long id);
+	Coche guardarCoche(Coche coche);
+	void eliminarCoche(Long id);
+}
+
+

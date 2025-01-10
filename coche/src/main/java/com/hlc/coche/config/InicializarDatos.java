@@ -22,7 +22,7 @@ public class InicializarDatos {
 	@PostConstruct
 	public void init() {
 		//Crear y guardar coches de ejemplo
-		if (cocheServicio.listarTodosLosCoches().iterator().hasNext()) {
+		if (cocheServicio.obtenerTodosLosCoches().iterator().hasNext()) {
 			//Si ya hay datos, no lo inicializamos
 			return;
 		}
