@@ -15,13 +15,14 @@ public class CocheServicioImplementacion implements CocheServicio{
 	private CocheRepositorio cocheRepositorio;
 	
 	public CocheServicioImplementacion(CocheRepositorio cocheRepositorio) {
-		
+		 this.cocheRepositorio = cocheRepositorio;
 	}
 
 	@Override
 	public List<Coche> obtenerTodosLosCoches() {
 		return cocheRepositorio.findAll();
 	}
+	
 
 	@Override
 	public Coche obtenerCochePorId(Long id) {
