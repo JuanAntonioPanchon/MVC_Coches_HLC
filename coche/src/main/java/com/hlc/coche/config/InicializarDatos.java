@@ -1,6 +1,6 @@
 package com.hlc.coche.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.hlc.coche.entidades.Coche;
@@ -11,8 +11,13 @@ import jakarta.annotation.PostConstruct;
 @Component
 public class InicializarDatos {
 
-	@Autowired
+	//@Autowired No es necesario si ponemos un constructor el de InicializarDatos (CocheServicio cocheServicio)
 	private CocheServicio cocheServicio;
+	
+	
+	public InicializarDatos(CocheServicio cocheServicio) {
+		this.cocheServicio = cocheServicio;
+	}
 	
 	@PostConstruct
 	public void init() {
