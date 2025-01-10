@@ -19,7 +19,7 @@ public class CocheControlador {
 	
 	@GetMapping("/")
 	public String listarProductos(Model model) {
-		model.addAttribute("coches", cocheServicio.listarTodosLosCoches());
+		model.addAttribute("coches", cocheServicio.obtenerTodosLosCoches());
 		return "index";
 	}
 	
